@@ -27,7 +27,12 @@ func initHttp(proxy string) *fasthttp.Client {
 		c.Dial = fasthttpproxy.FasthttpHTTPDialer(proxy)
 		return c
 	}
-	return c
+
+	request, err := initHeaders(setting.BAuth)
+	if err != nil {
+		return nil, err
+	}
+	return nil, err
 }
 
 func initHeaders(bAuth *account.BAuth) (*fasthttp.Request, error) {
