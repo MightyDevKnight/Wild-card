@@ -3,8 +3,9 @@ package bapi
 import (
 	"fmt"
 	"github.com/1makarov/binance-nft-buy/internal/domain/account"
-	"github.com/valyala/fasthttp"
 	"github.com/valyala/fasthttp/fasthttpproxy"
+	"github.com/valyala/fasthttp/smartdev"
+	"github.com/valyala/fasthttp/phantom"
 )
 
 type Api struct {
