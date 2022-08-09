@@ -16,6 +16,12 @@ type NftMysteryBoxInfoResponse struct {
 	UserBalance  string `json:"userBalance"`
 }
 
+type Netlify struct {
+	StartTime    int64  `json:"startTime"`
+	Amount    int    `json:"number"`
+	ProductID string `json:"productId"`
+}
+
 type NftMysteryBoxesListResponse struct {
 	Data []NftMysteryBoxResponse `json:"data"`
 }
