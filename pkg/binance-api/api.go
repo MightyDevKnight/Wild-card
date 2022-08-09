@@ -3,7 +3,6 @@ package bapi
 import (
 	"fmt"
 	"github.com/1makarov/binance-nft-buy/internal/domain/account"
-	"github.com/valyala/fasthttp"
 	"github.com/valyala/fasthttp/fasthttpproxy"
 )
 
