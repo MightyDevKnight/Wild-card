@@ -16,12 +16,3 @@ type NftMysteryBoxInfoResponse struct {
 	UserBalance  string `json:"userBalance"`
 }
 
-type NftMysteryBoxesListResponse struct {
-	Data []NftMysteryBoxResponse `json:"data"`
-}
-
-type NftMysteryBoxResponse struct {
-	Name          string `json:"name"`
-	ProductID     string `json:"productId"`
-	MappingStatus int    `json:"mappingStatus"`
-}
