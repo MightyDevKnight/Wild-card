@@ -42,7 +42,5 @@ func initHeaders(bAuth *account.BAuth) (*fasthttp.Request, error) {
 	r := &fasthttp.Request{}
 	r.Header.Set("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
 	r.Header.Set("clienttype", "web")
-	r.Header.Set("cookie", bAuth.Cookie)
-	r.Header.Set("csrftoken", bAuth.Csrf)
 	return r, nil
 }
