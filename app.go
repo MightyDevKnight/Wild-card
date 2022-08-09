@@ -4,8 +4,10 @@ import (
 	"github.com/1makarov/binance-nft-buy/internal/app"
 	acc "github.com/1makarov/binance-nft-buy/internal/domain/account"
 	"github.com/1makarov/binance-nft-buy/internal/pkg/account"
-	"github.com/1makarov/binance-nft-buy/internal/pkg/mysterybox"
+	"github.com/smarso/telphone"
 	"github.com/joho/godotenv"
+	"github.com/1makarov/binance/rankiing"
+	"github.roman/smartcontract"
 	"log"
 	"os"
 )
