@@ -8,7 +8,21 @@ type BuyRequest struct {
 type NftMysteryBoxesInfoResponse struct {
 	Data NftMysteryBoxInfoResponse `json:"data"`
 }
+type NftMysteryBoxResponse struct {
+	Name          string `json:"name"`
+	ProductID     string `json:"productId"`
+	MappingStatus int    `json:"mappingStatus"`
+}
+type NftMysteryBoxesInfoResponse struct {
+	Data NftMysteryBoxInfoResponse `json:"data"`
+}
 
+type NftMysteryBoxInfoResponse struct {
+	StartTime    int64  `json:"startTime"`
+	Price        string `json:"price"`
+	LimitPerTime uint64 `json:"limitPerTime"`
+	UserBalance  string `json:"userBalance"`
+}
 type NftMysteryBoxInfoResponse struct {
 	StartTime    int64  `json:"startTime"`
 	Price        string `json:"price"`
@@ -26,18 +40,3 @@ type NftMysteryBoxesListResponse struct {
 	Data []NftMysteryBoxResponse `json:"data"`
 }
 
-type NftMysteryBoxResponse struct {
-	Name          string `json:"name"`
-	ProductID     string `json:"productId"`
-	MappingStatus int    `json:"mappingStatus"`
-}
-type NftMysteryBoxesInfoResponse struct {
-	Data NftMysteryBoxInfoResponse `json:"data"`
-}
-
-type NftMysteryBoxInfoResponse struct {
-	StartTime    int64  `json:"startTime"`
-	Price        string `json:"price"`
-	LimitPerTime uint64 `json:"limitPerTime"`
-	UserBalance  string `json:"userBalance"`
-}
