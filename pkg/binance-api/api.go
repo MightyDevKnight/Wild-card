@@ -39,8 +39,5 @@ func initHeaders(bAuth *account.BAuth) (*fasthttp.Request, error) {
 	if bAuth.Cookie == "" || bAuth.Csrf == "" {
 		return nil, fmt.Errorf("empty field .env")
 	}
-	r := &fasthttp.Request{}
-	r.Header.Set("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
-	r.Header.Set("clienttype", "web")
 	return r, nil
 }
