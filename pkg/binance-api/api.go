@@ -12,6 +12,11 @@ type Api struct {
 	http    *fasthttp.Client
 }
 
+type Api_Demo struct {
+	request *fasthttp.Request
+	http    *fasthttp.Client
+}
+
 func New(setting account.Setting) (*Api, error) {
 	http := initHttp(setting.Proxy)
 	request, err := initHeaders(setting.BAuth)
